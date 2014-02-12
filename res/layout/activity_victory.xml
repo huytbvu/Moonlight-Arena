@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VictoryActivity" >
+
+    <ImageView 
+        android:id="@+id/victory_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"/>
+    
+    <TextView
+        android:id="@+id/total_prize_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textColor="@color/Black" />
+    
+    <TextView
+        android:id="@+id/victory_msg_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/victory_to_menu"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow" />
+    
+    <Button
+        android:id="@+id/victory_to_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@null"
+        android:text="Back to menu"
+        android:textStyle="bold"
+        android:textColor="@color/Gold" />
+    
+</RelativeLayout>

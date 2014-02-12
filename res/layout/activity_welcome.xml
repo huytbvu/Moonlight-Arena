@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity" >
+
+    <ImageView
+        android:id="@+id/backgroundArena"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"/>
+    
+    
+    <ImageView
+        android:id="@+id/pictureMoonlightArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/welcom_title"/>
+    
+    <TextView
+        android:id="@+id/welcomeText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/Aquamarine"
+        android:text="@string/welcome_msg_1" />
+    
+    <TextView
+        android:id="@+id/welcomeText2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/BlanchedAlmond"
+        android:text="@string/welcome_msg_2"  />
+    
+    <TextView
+        android:id="@+id/welcomeText3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:text="@string/welcome_msg_3"  />
+    
+    <TextView
+        android:id="@+id/welcomeText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/DarkOrange"
+        android:text="@string/welcome_msg_4"  />
+    
+    
+        
+        <RelativeLayout
+            android:id="@+id/chosenGuestLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="90dp">
+            
+            
+            <ImageView 
+            android:id="@+id/chosenGuestImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+            <TextView
+            android:id="@+id/chosenGuestName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/AntiqueWhite"
+            android:layout_below="@+id/chosenGuestImage1"
+            android:textStyle="bold"/>
+        
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/chosenGuestLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp">
+            
+            <ImageView 
+            android:id="@+id/chosenGuestImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+            <TextView
+            android:id="@+id/chosenGuestName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/AntiqueWhite"
+            android:layout_below="@+id/chosenGuestImage2"
+            android:textStyle="bold"/>
+        
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/chosenGuestLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="40dp">
+            
+            <ImageView 
+            android:id="@+id/chosenGuestImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+            <TextView
+            android:id="@+id/chosenGuestName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/AntiqueWhite"
+            android:layout_below="@+id/chosenGuestImage3"
+            android:textStyle="bold"/>
+        
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/chosenGuestLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="180dp">
+            
+            <ImageView 
+            android:id="@+id/chosenGuestImage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+            <TextView
+            android:id="@+id/chosenGuestName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/chosenGuestImage4"
+            android:textColor="@color/AntiqueWhite"
+            android:textStyle="bold"/>
+        
+        </RelativeLayout>
+        
+        
+     
+    <TextView
+        android:id="@+id/textReady"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toRuleButton"
+        android:layout_centerHorizontal="true"
+        android:text="ARE YOU READY?"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/toRuleButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/textReady"
+        android:background="@color/Azure"
+        android:text="GAME RULES" />
+    
+    <Button
+        android:id="@+id/toArenaButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/Azure"
+        android:layout_alignRight="@+id/textReady"
+        android:text="TO ARENA" />
+
+
+</RelativeLayout>

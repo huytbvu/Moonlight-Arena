@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BonusActivity" >
+
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bonus_stage_background"/>
+    
+    <Button
+        android:id="@+id/bonusStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:background="@color/Red"
+        android:text="STOP SEARCHING"
+        android:textColor="@color/White"/>
+    
+    <TextView 
+        android:id="@+id/moneybank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/bonusStopButton"
+        android:textSize="20sp"
+        android:textColor="@color/AntiqueWhite"
+        android:textStyle="bold"
+        android:text="Moneybank:"
+        />
+    
+    <TextView 
+        android:id="@+id/timeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/moneybank"
+        android:textSize="20sp"
+        android:textColor="@color/AntiqueWhite"
+        android:textStyle="bold"
+        android:text="Time left:"
+        />
+    
+    
+    
+        <LinearLayout
+	        android:id="@+id/key_display"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_margin="10dp"
+	        android:orientation="vertical" >
+	        
+        </LinearLayout>
+    
+	    <LinearLayout
+	        android:id="@+id/moonpiece_display"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/timeLeft"
+	        android:orientation="horizontal" >
+	        
+	    </LinearLayout>
+        
+        
+    
+    
+    <RelativeLayout
+        android:id="@+id/chest_display"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" >
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

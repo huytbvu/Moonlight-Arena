@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:background="@drawable/arena_welcome"
+    android:weightSum="100"
+    tools:context=".ArenaActivity" >
+	
+	<LinearLayout
+		android:id="@+id/statusPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="5"
+        android:layout_margin="5dp">
+		
+		<TextView
+			android:id="@+id/score"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_weight="1.5"
+			android:textColor="@color/Cornsilk"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:id="@+id/oppoCnt"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_weight="2.5"
+			android:textColor="@color/Cornsilk"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:id="@+id/stage"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:textColor="@color/Cornsilk"
+			android:visibility="invisible"/>
+
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/gameEntityPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:weightSum="30"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+		
+		<LinearLayout
+			android:id="@+id/helpPanel"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:weightSum="12"
+			android:layout_margin="5dp"
+			android:orientation="vertical">
+			
+			<ImageButton
+				android:id="@+id/help50"
+				android:layout_width="match_parent"
+				android:layout_height="0dip"
+				android:layout_weight="4"
+				android:src="@drawable/help50"
+				android:background="@null"
+				android:visibility="invisible"/>
+
+			<ImageButton
+				android:id="@+id/helpPoll"
+				android:layout_width="match_parent"
+				android:layout_height="0dip"
+				android:layout_weight="4"
+				android:src="@drawable/helppoll"
+				android:background="@null"
+				android:visibility="invisible" />
+
+			<ImageButton
+				android:id="@+id/helpChange"
+				android:layout_width="match_parent"
+				android:layout_height="0dip"
+				android:layout_weight="4"
+				android:src="@drawable/helpchange"
+				android:background="@null"
+				android:visibility="invisible" />
+
+			
+		</LinearLayout>
+		
+		<RelativeLayout
+			android:id="@+id/opponentLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="18"
+			>
+			
+			<ImageView 
+				android:id="@+id/person"
+				android:layout_width="10dp"
+				android:layout_height="20dp"/>
+			
+		</RelativeLayout>
+		
+	
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/questionPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+		android:weightSum="25"
+		android:layout_weight="25"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+		
+	    <TextView 
+			android:id="@+id/question_tv_sreen"
+			android:layout_width="match_parent"
+			android:layout_height="0dip"
+			android:layout_weight="15"
+			android:textSize="12sp"
+			android:textColor="@color/Ivory"
+			android:background="@drawable/question_screen"
+			android:gravity="center"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:visibility="invisible"/>
+	    
+		
+	    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dip"
+			android:weightSum="10"
+			android:layout_weight="10"
+			android:orientation="horizontal">
+			
+			<TextView  
+				android:id="@+id/questionTopicDisplay"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="6"
+				android:textSize="20sp"
+				android:textColor="@color/Aquamarine"
+				android:background="@color/Gray"
+				android:visibility="invisible"/>
+			
+			<TextView
+	            android:id="@+id/timeRemain"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+	            android:textColor="@color/Ivory"
+	            android:background="@color/Black"
+	            android:textSize="25sp"
+	            android:visibility="invisible"
+	            android:text="" />
+			
+			<Button 
+			    android:id="@+id/ingameStopButton"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:visibility="invisible"
+				android:background="@color/Red"
+				android:text="STOP"
+				android:textColor="@color/White"
+				android:layout_weight="2"/>
+			
+				
+		</LinearLayout>
+		
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/choicePanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+		android:weightSum="40"
+		android:layout_weight="40"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:visibility="invisible">
+		
+		<Button
+            android:id="@+id/choice1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+			android:layout_weight="10"
+            android:background="@drawable/button_a"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:textColor="@color/White"/>
+
+        <Button
+            android:id="@+id/choice2"
+			android:layout_width="match_parent"
+            android:layout_height="0dip"
+			android:layout_weight="10"
+            android:background="@drawable/button_b"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:textColor="@color/White"/>
+
+        <Button
+            android:id="@+id/choice3"
+			android:layout_width="match_parent"
+            android:layout_height="0dip"
+			android:layout_weight="10"
+            android:background="@drawable/button_c"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:textColor="@color/White"/>
+
+        <Button
+            android:id="@+id/choice4"
+			android:layout_width="match_parent"
+            android:layout_height="0dip"
+			android:layout_weight="10"
+            android:background="@drawable/button_d"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:textColor="@color/White"/>
+		
+	</LinearLayout>
+    
+</LinearLayout>

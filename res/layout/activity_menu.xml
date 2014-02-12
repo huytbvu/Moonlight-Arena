@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:id="@+id/backgroundArena"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arena"/>
+    
+    <Button
+        android:id="@+id/menuStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuGameRule"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="START"
+        android:textColor="@color/Ivory"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/menuGameRule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuRival"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/Ivory"
+        android:textStyle="bold" 
+        android:text="GAME RULES" />
+
+    
+     
+    <Button
+        android:id="@+id/menuRival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuExit"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/Ivory"
+        android:textStyle="bold" 
+        android:text="RIVALS" />
+    
+    
+    <Button
+        android:id="@+id/menuExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/Ivory"
+        android:background="@android:color/transparent"
+        android:textStyle="bold" 
+        android:text="EXIT" />
+    
+
+</RelativeLayout>

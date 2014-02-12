@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+    
+    <ImageView
+        android:id="@+id/backgroundRivalsInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/rival_background"/>
+    
+    <TextView
+        android:id="@+id/guest_name"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/guest_specialty_1"
+        android:textColor="@color/Gold"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/guest_specialty_1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/AliceBlue"
+        android:layout_above="@+id/guest_specialty_2"
+        android:textStyle="bold">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/guest_specialty_2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/AliceBlue"
+        android:layout_above="@+id/guest_description_layout"
+        android:textStyle="bold">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/guest_description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/buttonBackRivalsInfo"
+        android:layout_toLeftOf="@+id/guest_view">
+        
+           <ImageView
+                android:id="@+id/rival_tv_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rival_desc" />
+            
+            <TextView
+                android:id="@+id/guest_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rival_tv_screen"
+                android:layout_alignRight="@+id/rival_tv_screen"
+                android:layout_margin="11dp"
+                android:text="@string/rival_view_instruct"
+                android:textColor="@color/Cornsilk"
+                android:textSize="12sp" />
+            
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/buttonBackRivalsInfo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/Chartreuse"
+        android:textStyle="bold"
+        android:text="Back to Menu" />
+
+    <ScrollView
+        android:id="@+id/guest_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonBackRivalsInfo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:fadeScrollbars="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <ImageButton
+                android:id="@+id/guest_photo_chelsea_manchenal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_chelsea_manchenal" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_delfino_de_la_polly_wolly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_chelsea_manchenal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_delfino_de_la_polly_wolly" />
+            
+             <ImageButton
+                android:id="@+id/guest_photo_dr_conphi_guuru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_delfino_de_la_polly_wolly"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_dr_conphi_guuru" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_hanie_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_dr_conphi_guuru"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_hanie_v" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_his_excellency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_hanie_v"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_his_excellency" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_huy_the_wise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_his_excellency"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_huy_the_wise" />
+            
+             <ImageButton
+                android:id="@+id/guest_photo_minami_sama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_huy_the_wise"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_minami_sama" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_panda_amanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_minami_sama"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_panda_amanda" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_pon_van_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_panda_amanda"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_pon_van_four" />
+
+            <ImageButton
+                android:id="@+id/guest_photo_soo_jin_kiel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_photo_pon_van_four"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/guest_soo_jin_kiel" />
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

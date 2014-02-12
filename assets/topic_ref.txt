@@ -1,0 +1,8 @@
+static final int TOPIC_SCIENCE = 101;
+static final int TOPIC_TECHNOLOGY = 102;
+static final int TOPIC_ENTERTAINMENT = 103;
+static final int TOPIC_SOCIAL = 104;
+static final int TOPIC_HISTORY = 105;
+static final int TOPIC_LITERATURE = 106;
+static final int TOPIC_ART_CULTURE = 107;
+static final int TOPIC_SPORT = 108;

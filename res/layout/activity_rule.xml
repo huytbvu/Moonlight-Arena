@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuleActivity" >
+
+    <ImageView
+        android:id="@+id/backgroundRuleInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/rival_background"/>
+    
+    <RelativeLayout
+        android:id="@+id/infoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/info_screen"
+        android:visibility="invisible" >
+           
+            <ScrollView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+                
+                     <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+                    
+		                    <TextView
+		                    android:id="@+id/infoTextStyle1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="#30B4FA"/>
+                
+			                <TextView
+			                    android:id="@+id/infoTextStyle2"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#FFFA32"/>
+                
+			                <TextView
+			                    android:id="@+id/infoTextStyle3"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="#5EFFE0"/>
+                    </LinearLayout>
+                
+            </ScrollView>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/buttonInfoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:layout_marginBottom="20dp">
+        
+            <Button
+                android:id="@+id/buttonMainInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/AliceBlue"
+                android:textColor="@color/Chartreuse"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Main" />
+            
+            <Button
+                android:id="@+id/buttonQuestionInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/AliceBlue"
+                android:textColor="@color/Chartreuse"
+                android:layout_toRightOf="@+id/buttonMainInfo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Question" />
+            
+            <Button
+                android:id="@+id/buttonRivalsInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/AliceBlue"
+                android:textColor="@color/Chartreuse"
+                android:layout_below="@+id/buttonMainInfo"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Rivals" />
+            
+            <Button
+                android:id="@+id/buttonBackInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/AliceBlue"
+                android:textColor="@color/Chartreuse"
+                android:layout_below="@+id/buttonQuestionInfo"
+                android:layout_toRightOf="@+id/buttonRivalsInfo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Back" />
+        
+    </RelativeLayout>
+     
+    
+</RelativeLayout>
